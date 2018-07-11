@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<!--This is Relative layout viewGroup to have two buttons Descending and Ascending-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorPrimary">
+        <!--This is Ascending button-->
+        <Button
+            android:id="@+id/btn_asc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ascending"
+            android:padding="20dp"
+            android:textSize="18sp" />
+<!--This is descending button-->
+        <Button
+            android:id="@+id/btn_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/btn_asc"
+            android:text="@string/descending"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+<!--This is listView to show items-->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8b8b90" />
+</LinearLayout>
